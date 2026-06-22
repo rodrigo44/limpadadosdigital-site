@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Termos de Uso | Limpa Dados Digital</title>
+  <meta name="description" content="Leia os Termos de Uso da Limpa Dados Digital. Conheça as condições para utilização do site e contratação dos nossos serviços de remoção de conteúdo.">
+  <meta name="robots" content="index, follow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg:        #080C14;
+      --bg2:       #0D1420;
+      --bg3:       #111A2C;
+      --ciano:     #00D4FF;
+      --ciano2:    #00A8CC;
+      --verde:     #00FF94;
+      --texto:     #E8EDF5;
+      --muted:     #6B7A99;
+      --borda:     rgba(0,212,255,0.15);
+      --borda2:    rgba(255,255,255,0.06);
+      --gradiente: linear-gradient(135deg, #00D4FF, #00FF94);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Sora', sans-serif;
+      background: var(--bg);
+      color: var(--texto);
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+
+    a { color: var(--ciano); text-decoration: none; transition: color 0.2s; }
+    a:hover { color: var(--verde); }
+
+    /* ── NAVBAR ── */
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      height: 72px; padding: 0 5%;
+      display: flex; align-items: center; justify-content: space-between;
+      background: rgba(8,12,20,0.85);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--borda2);
+    }
+
+    .nav-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+
+    .logo-icon {
+      width: 36px; height: 36px; border-radius: 8px;
+      background: var(--gradiente);
+      display: flex; align-items: center; justify-content: center;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px; font-weight: 500;
+      color: #080C14; letter-spacing: -0.5px;
+      flex-shrink: 0;
+    }
+
+    .logo-text {
+      font-size: 15px; font-weight: 600; color: var(--texto); white-space: nowrap;
+    }
+    .logo-text span {
+      background: var(--gradiente);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .nav-links { display: flex; align-items: center; gap: 32px; }
+    .nav-links a {
+      font-size: 14px; font-weight: 400; color: var(--muted);
+      transition: color 0.2s; text-decoration: none;
+    }
+    .nav-links a:hover { color: var(--texto); }
+
+    .btn-primary {
+      background: var(--gradiente);
+      color: #080C14 !important;
+      padding: 10px 22px; border-radius: 10px;
+      font-weight: 700; font-size: 13px;
+      box-shadow: 0 0 40px rgba(0,212,255,0.25);
+      transition: transform 0.2s, box-shadow 0.2s;
+      text-decoration: none; display: inline-block;
+    }
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 0 60px rgba(0,212,255,0.4);
+    }
+
+    .nav-mobile-btn { display: none; }
+
+    /* ── PAGE HEADER ── */
+    .page-header {
+      padding: 140px 5% 64px;
+      border-bottom: 1px solid var(--borda2);
+    }
+
+    .page-header-inner { max-width: 860px; margin: 0 auto; }
+
+    .page-badge {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: rgba(0,212,255,0.08);
+      border: 1px solid var(--borda);
+      border-radius: 100px;
+      padding: 6px 14px;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px; color: var(--ciano);
+      letter-spacing: 0.5px;
+      margin-bottom: 24px;
+    }
+
+    .page-badge::before {
+      content: '';
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      background: var(--ciano);
+    }
+
+    .page-header h1 {
+      font-size: clamp(28px, 4vw, 42px);
+      font-weight: 800; line-height: 1.2;
+      margin-bottom: 16px;
+    }
+
+    .page-header h1 span {
+      background: var(--gradiente);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .page-header .meta {
+      font-size: 14px; color: var(--muted);
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    /* ── CONTENT ── */
+    .content-wrap {
+      max-width: 860px; margin: 0 auto;
+      padding: 64px 5% 100px;
+    }
+
+    .doc-section { margin-bottom: 52px; }
+
+    .doc-section h2 {
+      font-size: 18px; font-weight: 700;
+      color: var(--ciano);
+      margin-bottom: 16px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--borda);
+      display: flex; align-items: center; gap: 10px;
+    }
+
+    .doc-section h2 .num {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px; color: var(--muted);
+      background: var(--bg3);
+      border: 1px solid var(--borda2);
+      border-radius: 6px;
+      padding: 2px 8px;
+    }
+
+    .doc-section h3 {
+      font-size: 15px; font-weight: 600;
+      color: var(--texto);
+      margin: 24px 0 10px;
+    }
+
+    .doc-section p {
+      font-size: 15px; color: var(--texto);
+      line-height: 1.8; margin-bottom: 14px;
+      opacity: 0.88;
+    }
+
+    .doc-section ul, .doc-section ol {
+      padding-left: 20px; margin-bottom: 14px;
+    }
+
+    .doc-section li {
+      font-size: 15px; color: var(--texto);
+      line-height: 1.8; margin-bottom: 6px;
+      opacity: 0.88;
+    }
+
+    .doc-section li::marker { color: var(--ciano); }
+
+    .highlight-box {
+      background: var(--bg3);
+      border: 1px solid var(--borda);
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin: 20px 0;
+    }
+
+    .highlight-box p { margin-bottom: 0; }
+
+    .warning-box {
+      background: rgba(0,212,255,0.04);
+      border: 1px solid rgba(0,212,255,0.2);
+      border-left: 3px solid var(--ciano);
+      border-radius: 8px;
+      padding: 16px 20px;
+      margin: 20px 0;
+    }
+
+    .warning-box p { margin-bottom: 0; font-size: 14px; }
+
+    .contact-box {
+      background: rgba(0,212,255,0.05);
+      border: 1px solid var(--borda);
+      border-radius: 12px;
+      padding: 24px;
+      margin-top: 24px;
+    }
+
+    .contact-box p { margin-bottom: 6px; }
+
+    /* ── CTA STRIP ── */
+    .cta-strip {
+      background: var(--bg2);
+      border-top: 1px solid var(--borda2);
+      padding: 64px 5%;
+      text-align: center;
+    }
+
+    .cta-strip h2 {
+      font-size: 22px; font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .cta-strip p {
+      font-size: 15px; color: var(--muted);
+      margin-bottom: 28px;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--bg);
+      border-top: 1px solid var(--borda2);
+      padding: 56px 5% 32px;
+    }
+
+    .footer-grid {
+      max-width: 1100px; margin: 0 auto;
+      display: grid; grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 40px; margin-bottom: 48px;
+    }
+
+    .footer-desc {
+      font-size: 13px; color: var(--muted);
+      line-height: 1.7; margin-top: 14px; margin-bottom: 20px;
+    }
+
+    .footer-col h4 {
+      font-size: 12px; font-weight: 600;
+      color: var(--muted); letter-spacing: 0.08em;
+      text-transform: uppercase; margin-bottom: 16px;
+    }
+
+    .footer-col ul { list-style: none; }
+    .footer-col ul li { margin-bottom: 10px; }
+    .footer-col ul li a {
+      font-size: 13px; color: var(--muted);
+      transition: color 0.2s; text-decoration: none;
+    }
+    .footer-col ul li a:hover { color: var(--ciano); }
+
+    .footer-bar {
+      max-width: 1100px; margin: 0 auto;
+      border-top: 1px solid var(--borda2);
+      padding-top: 24px;
+      display: flex; justify-content: space-between; align-items: center;
+      flex-wrap: wrap; gap: 12px;
+    }
+
+    .footer-bar p { font-size: 12px; color: var(--muted); }
+    .footer-bar span {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px; color: var(--muted);
+    }
+
+    /* ── WHATSAPP FLOAT ── */
+    .whatsapp-float {
+      position: fixed; bottom: 28px; right: 24px; z-index: 999;
+      width: 48px; height: 48px;
+      background: #25D366; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 4px 20px rgba(37,211,102,0.4);
+      animation: wpp-bounce 3s ease-in-out infinite;
+      text-decoration: none;
+    }
+
+    .whatsapp-float svg { width: 26px; height: 26px; fill: #fff; }
+
+    @keyframes wpp-bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-6px); }
+    }
+
+    .reveal { opacity: 0; transform: translateY(24px); transition: 0.6s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .nav-mobile-btn { display: flex; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+      .footer-brand { grid-column: 1 / -1; }
+    }
+
+    @media (max-width: 500px) {
+      .footer-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+  <!-- Meta Pixel Code — 2 pixels ativos -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '1341313528097820');
+  fbq('init', '999172732663638');
+  fbq('track', 'PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1341313528097820&ev=PageView&noscript=1"/>
+    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=999172732663638&ev=PageView&noscript=1"/>
+  </noscript>
+  <!-- End Meta Pixel Code -->
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <a href="index.html" class="nav-logo">
+      <div class="logo-icon">LDD</div>
+      <span class="logo-text">Limpa<span>Dados</span> Digital</span>
+    </a>
+    <div class="nav-links">
+      <a href="index.html">Início</a>
+      <a href="sobre.html">Sobre</a>
+      <a href="index.html#servicos">Serviços</a>
+      <a href="contato.html">Contato</a>
+      <a href="https://wa.me/5548991058748?text=Ol%C3%A1%2C%20tenho%20interesse!%20Quero%20fazer%20an%C3%A1lise%20para%20remo%C3%A7%C3%A3o%20de%20conte%C3%BAdo%20e%20processos.%20(Site)" class="btn-primary" target="_blank" rel="noopener">Análise Gratuita</a>
+    </div>
+    <a href="https://wa.me/5548991058748?text=Ol%C3%A1%2C%20tenho%20interesse!%20Quero%20fazer%20an%C3%A1lise%20para%20remo%C3%A7%C3%A3o%20de%20conte%C3%BAdo%20e%20processos.%20(Site)" class="btn-primary nav-mobile-btn" target="_blank" rel="noopener">Análise Grátis</a>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <header class="page-header">
+    <div class="page-header-inner">
+      <div class="page-badge">LEGAL / CONTRATUAL</div>
+      <h1>Termos de <span>Uso</span></h1>
+      <p class="meta">Última atualização: 20 de maio de 2025 &nbsp;·&nbsp; Versão 1.0</p>
+    </div>
+  </header>
+
+  <!-- CONTENT -->
+  <main class="content-wrap">
+
+    <div class="doc-section reveal">
+      <div class="highlight-box">
+        <p>Ao acessar o site da <strong>Limpa Dados Digital</strong> ou contratar qualquer um dos nossos serviços, você concorda integralmente com estes Termos de Uso. Leia com atenção antes de prosseguir. Caso não concorde com alguma condição, recomendamos que não utilize nosso site ou serviços.</p>
+      </div>
+    </div>
+
+    <div class="doc-section reveal">
+      <h2><span class="num">01</span> Identificação</h2>
+      <p>Estes Termos de Uso regulam a relação entre a <strong>Limpa Dados Digital</strong> (doravante "LDD", "nós" ou "empresa") e o usuário (doravante "você" ou "cliente") que acessa o site <strong>limpadadosdigital.com.br</strong> ou contrata nossos serviços.</p>
+      <p><strong>E-mail:</strong> <a href="mailto:contato@limpadadosdigital.com.br">contato@limpadadosdigital.com.br</a><br>
+      <strong>WhatsApp:</strong> <a href="https://wa.me/5548991058748" target="_blank" rel="noopener">+55 48 99105-8748</a></p>
+    </div>
+
+    <div class="doc-section reveal">
+      <h2><span class="num">02</span> Objeto e descrição dos serviços</h2>
+      <p>A Limpa Dados Digital oferece serviços de <strong>remoção de conteúdo indesejado da internet</strong>, incluindo:</p>
+      <ul>
+        <li>Remoção de links e páginas de resultados do Google</li>
+        <li>Exclusão de processos e dados no Jusbrasil, Escavador e plataformas similares</li>
+        <li>Remoção de CPF, CNPJ e dados cadastrais expostos</li>
+        <li>Solicitação de exclusão de imagens e vídeos não autorizados</li>
+        <li>Remoção de imagens do Google Street View</li>
+        <li>Monitoramento contínuo de menções digitais</li>
+      </ul>
+      <div class="warning-box">
+        <p><strong>Importante:</strong> A Limpa Dados Digital não é um escritório de advocacia e não presta assessoria jurídica. Nossos serviços são de natureza técnica e operacional, sem garantia de resultado judicial.</p>
+      </div>
+    </div>
+
+    <div class="doc-section reveal">
+      <h2><span class="num">03</span> Aceitação dos termos</h2>
+      <p>A utilização do site ou o início de qualquer contratação implica aceitação plena e irrestrita destes Termos de Uso, bem como da nossa <a href="politica-de-privacidade.html">Política de Privacidade</a> e <a href="politica-de-cookies.html">Política de Cookies</a>.</p>
+      <p>Estes termos podem ser atualizados a qualquer momento. A versão vigente sempre estará disponível nesta página. O uso contínuo dos serviços após alterações implica concordância com os novos termos.</p>
+    </div>
+
+    <div class="doc-section reveal">
+      <h2><span class="num">04</span> Condições de uso do site</h2>
+      <p>Ao utilizar este site, você se compromete a:</p>
+      <ul>
+        <li>Fornecer informações verdadeiras, completas e atualizadas</li>
+        <li>Não utilizar o site para fins ilícitos ou contrários à moral e aos bons costumes</li>
+        <li>Não tentar acessar áreas restritas, sistemas internos ou dados de terceiros</li>
+        <li>Não reproduzir, distribuir ou modificar conteúdos do site sem autorização prévia</li>
+        <li>Não utilizar bots, scrapers ou ferramentas automatizadas para acessar o site</li>
+        <li>Não enviar spam, vírus ou qualquer código malicioso</li>
+      </ul>
+    </div>
+
+    <div class="doc-section reveal">
+      <h2><span class="num">05</span> Contratação dos serviços</h2>
+
+      <h3>5.1 Processo de contratação</h3>
+      <p>A contratação dos serviços ocorre mediante:</p>
+      <ol>
+        <li>Contato inicial via WhatsApp ou e-mail</li>
+        <li>Análise gratuita do caso pelo nosso time</li>
+        <li>Apresentação de proposta e condições específicas</li>
+        <li>Aceite formal e pagamento conforme combinado</li>
+        <li>Início da execução do serviço</li>
+      </ol>
+
+      <h3>5.2 Informações necessárias</h3>
+      <p>Para execução dos serviços, você deverá fornecer as informações e documentos solicitados pela nossa equipe. O prazo de execução começa a contar a partir do recebimento completo dessas informações.</p>
+
+      <h3>5.3 Limitações do serviço</h3>
+      <p>A Limpa Dados Digital atua por meios lícitos e dentro das possibilidades técnicas e legais disponíveis. Não realizamos:</p>
+      <ul>
+        <li>Invasão de sistemas, hacking ou qualquer atividade ilegal</li>
+        <li>Falsificação de documentos ou informações</li>
+        <li>Remoção de conteúdo verossímil de interesse público</li>
+        <li>Serviços que configurem supressão de provas em processo judicial em curso</li>
+      </ul>
+    </div>
+
+    <div class="doc-section reveal">
+      <h2><span class="num">06</span> Prazo e garantias</h2>
+      <p>Os prazos de execução variam conforme a plataforma e a complexidade do caso, sendo informados individualmente na proposta. A LDD não garante prazo fixo para plataformas cujas políticas internas de remoção são definidas por terceiros.</p>
+      <div class="warning-box">
+        <p>A Limpa Dados Digital <strong>não garante resultado judicial</strong> nem se responsabiliza por decisões de plataformas ou órgãos externos que eventualmente neguem solicitações de remoção devidamente enviadas.</p>
+      </div>
+      <p>Nos casos em que a remoção não for possível pelos meios disponíveis, informaremos o cliente e apresentaremos alternativas quando existirem.</p>
+    </div>
+
+    <div class="doc-section reveal">
+      <h2><span class="num">07</span> Pagamento e reembolso</h2>
+      <p>Os valores, formas de pagamento e condições de reembolso são definidos individualmente para cada caso e constam na proposta apresentada ao cliente antes da contratação.</p>
+      <p>Em geral, aplicam-se as seguintes diretrizes:</p>
+      <ul>
+        <li>O pagamento poderá ser total ou parcial, conforme acordado</li>
+        <li>Reembolsos são avaliados caso a caso, considerando o trabalho já executado</li>
+        <li>Desistências após início da execução podem não gerar direito a reembolso integral</li>
+      </ul>
+      <p>Situações específicas de reembolso são regidas pelo Código de Defesa do Consumidor (Lei nº 8.078/1990) e pelas condições previstas em contrato.</p>
+    </div>
+
+    <div class="doc-section reveal">
+      <h2><span class="num">08</span> Propriedade intelectual</h2>
+      <p>Todo o conteúdo deste site — incluindo textos, imagens, logotipo, identidade visual, layout e código-fonte — é de propriedade exclusiva da Limpa Dados Digital e está protegido pelas leis de propriedade intelectual brasileiras.</p>
+      <p>É vedada a reprodução total ou parcial, distribuição, modificação ou uso comercial de qualquer elemento do site sem autorização expressa e por escrito da LDD.</p>
+    </div>
+
+    <div class="doc-section reveal">
+      <h2><span class="num">09</span> Responsabilidades e limitações</h2>
+
+      <h3>9.1 Responsabilidades da LDD</h3>
+      <ul>
+        <li>Empregar todos os meios lícitos disponíveis para executar o serviço contratado</li>
+        <li>Manter sigilo sobre as informações fornecidas pelo cliente</li>
+        <li>Comunicar o cliente sobre o andamento e resultado das solicitações</li>
+        <li>Agir com ética, transparência e dentro dos limites legais</li>
+      </ul>
+
+      <h3>9.2 Responsabilidades do cliente</h3>
+      <ul>
+        <li>Fornecer informações verdadeiras e documentação legítima</li>
+        <li>Não solicitar remoção de conteúdo de terceiros de forma fraudulenta</li>
+        <li>Efetuar o pagamento conforme acordado</li>
+        <li>Cooperar com as solicitações de informação da equipe durante a execução</li>
+      </ul>
+
+      <h3>9.3 Exclusão de responsabilidade</h3>
+      <p>A LDD não se responsabiliza por:</p>
+      <ul>
+        <li>Indisponibilidade temporária do site por manutenção ou problemas técnicos</li>
+        <li>Decisões de plataformas externas que neguem solicitações de remoção</li>
+        <li>Reindexação de conteúdo por mecanismos de busca após remoção bem-sucedida</li>
+        <li>Danos decorrentes de informações falsas fornecidas pelo cliente</li>
+      </ul>
+    </div>
+
+    <div class="doc-section reveal">
+      <h2><span class="num">10</span> Confidencialidade</h2>
+      <p>Todas as informações compartilhadas pelo cliente durante a contratação e execução dos serviços são tratadas com absoluto sigilo. A LDD não divulga dados de clientes a terceiros, exceto quando exigido por lei ou decisão judicial.</p>
+      <p>Nossos colaboradores e parceiros operam sob acordos de confidencialidade. Para mais detalhes, consulte nossa <a href="politica-de-privacidade.html">Política de Privacidade</a>.</p>
+    </div>
+
+    <div class="doc-section reveal">
+      <h2><span class="num">11</span> Links para sites de terceiros</h2>
+      <p>Este site pode conter links para sites externos. A Limpa Dados Digital não controla nem se responsabiliza pelo conteúdo, práticas de privacidade ou disponibilidade desses sites. A inclusão de um link não implica endosso ou parceria.</p>
+    </div>
+
+    <div class="doc-section reveal">
+      <h2><span class="num">12</span> Lei aplicável e foro</h2>
+      <p>Estes Termos de Uso são regidos pelas leis brasileiras, em especial pelo Código Civil (Lei nº 10.406/2002), Código de Defesa do Consumidor (Lei nº 8.078/1990), Marco Civil da Internet (Lei nº 12.965/2014) e Lei Geral de Proteção de Dados (Lei nº 13.709/2018).</p>
+      <p>Fica eleito o foro da comarca de Florianópolis/SC para dirimir quaisquer controvérsias decorrentes destes Termos, com renúncia expressa a qualquer outro, por mais privilegiado que seja.</p>
+    </div>
+
+    <div class="doc-section reveal">
+      <h2><span class="num">13</span> Disposições gerais</h2>
+      <ul>
+        <li>Caso alguma cláusula destes Termos seja considerada inválida, as demais permanecem em pleno vigor</li>
+        <li>A tolerância de qualquer descumprimento não implica renúncia ao direito de exigir o cumprimento posterior</li>
+        <li>Estes Termos constituem o acordo integral entre as partes quanto ao uso do site e serviços</li>
+      </ul>
+    </div>
+
+    <div class="doc-section reveal">
+      <h2><span class="num">14</span> Contato</h2>
+      <div class="contact-box">
+        <p>Para dúvidas sobre estes Termos de Uso ou sobre nossos serviços:</p>
+        <p><strong>E-mail:</strong> <a href="mailto:contato@limpadadosdigital.com.br">contato@limpadadosdigital.com.br</a></p>
+        <p><strong>WhatsApp:</strong> <a href="https://wa.me/5548991058748" target="_blank" rel="noopener">+55 48 99105-8748</a></p>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- CTA STRIP -->
+  <section class="cta-strip reveal">
+    <h2>Pronto para proteger sua reputação digital?</h2>
+    <p>Fale com nossa equipe e receba uma análise gratuita do seu caso.</p>
+    <a href="https://wa.me/5548991058748?text=Ol%C3%A1%2C%20tenho%20interesse!%20Quero%20fazer%20an%C3%A1lise%20para%20remo%C3%A7%C3%A3o%20de%20conte%C3%BAdo%20e%20processos.%20(Site)" class="btn-primary" target="_blank" rel="noopener">Falar no WhatsApp</a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">
+          <div class="logo-icon">LDD</div>
+          <span class="logo-text">Limpa<span>Dados</span> Digital</span>
+        </a>
+        <p class="footer-desc">Especialistas em remoção de conteúdo indesejado da internet. Protegemos sua reputação digital com ética, tecnologia e resultados comprovados.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Serviços</h4>
+        <ul>
+          <li><a href="index.html#servicos">Remoção no Google</a></li>
+          <li><a href="index.html#servicos">Jusbrasil / Escavador</a></li>
+          <li><a href="index.html#servicos">CPF / CNPJ Exposto</a></li>
+          <li><a href="index.html#servicos">Imagens e Vídeos</a></li>
+          <li><a href="index.html#servicos">Street View</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Institucional</h4>
+        <ul>
+          <li><a href="sobre.html">Sobre nós</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="lgpd.html">Seus direitos LGPD</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="politica-de-privacidade.html">Política de Privacidade</a></li>
+          <li><a href="termos-de-uso.html">Termos de Uso</a></li>
+          <li><a href="politica-de-cookies.html">Política de Cookies</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bar">
+      <p>© 2025 Limpa Dados Digital. Todos os direitos reservados.</p>
+      <span>LGPD · Marco Civil da Internet · Ética e Transparência</span>
+    </div>
+  </footer>
+
+  <!-- WHATSAPP FLOAT -->
+  <a href="https://wa.me/5548991058748?text=Ol%C3%A1%2C%20tenho%20interesse!%20Quero%20fazer%20an%C3%A1lise%20para%20remo%C3%A7%C3%A3o%20de%20conte%C3%BAdo%20e%20processos.%20(Site)" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+  <script>
+    const revealEls = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => entry.target.classList.add('visible'), i * 60);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    revealEls.forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>

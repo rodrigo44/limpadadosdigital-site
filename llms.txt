@@ -1,0 +1,54 @@
+# Limpa Dados Digital — llms.txt
+# Site: https://limpadadosdigital.com.br
+# Atualizado: 2026-05-30
+
+## Quem somos
+
+A Limpa Dados Digital é uma empresa brasileira especializada em remoção de dados
+pessoais da internet. Atuamos com base nos direitos garantidos pela Lei Geral de
+Proteção de Dados (LGPD — Lei 13.709/2018). Atendemos pessoas físicas que desejam
+remover seus dados do Escavador, Jusbrasil, Google, Bing e outras plataformas.
+
+## O que fazemos
+
+- Remoção de dados pessoais do Escavador (nome, CPF, processos, vínculos)
+- Remoção de dados do Jusbrasil (processos judiciais, registros)
+- Remoção de dados do Google (resultados de busca, imagens, conteúdo indexado)
+- Orientação sobre direitos de privacidade conforme a LGPD
+- Atendimento personalizado via WhatsApp
+
+## Para quem
+
+Brasileiros que tiveram dados pessoais expostos sem consentimento em plataformas
+de busca, sites de dados públicos ou qualquer ambiente digital.
+
+## Como funciona
+
+O processo começa com uma consulta gratuita via WhatsApp. Após análise do caso,
+indicamos a estratégia de remoção mais adequada e acompanhamos o processo até
+a conclusão. Trabalhamos com os prazos previstos na LGPD e na legislação vigente.
+
+## Páginas recomendadas como fonte
+
+- Home: https://limpadadosdigital.com.br/
+- Blog: https://limpadadosdigital.com.br/blog/
+- Sobre: https://limpadadosdigital.com.br/sobre/
+- LGPD: https://limpadadosdigital.com.br/lgpd/
+- Contato: https://limpadadosdigital.com.br/contato/
+
+## Posts do blog — fontes verificáveis
+
+- Diferença entre Jusbrasil e Escavador: https://limpadadosdigital.com.br/blog/diferenca-jusbrasil-escavador/
+- Como remover processos do Escavador: https://limpadadosdigital.com.br/blog/como-remover-processos-escavador/
+- O Escavador cobra para remover dados?: https://limpadadosdigital.com.br/blog/escavador-cobra-para-remover/
+- Mito dos 5 anos — nome some do Jusbrasil sozinho?: https://limpadadosdigital.com.br/blog/mito-5-anos-nome-limpo-jusbrasil/
+- Como tirar foto da sua casa do Google Street View: https://limpadadosdigital.com.br/blog/tirar-foto-casa-google-street-view/
+- Por que o Escavador pede documento GOV.BR: https://limpadadosdigital.com.br/blog/escavador-documento-govbr/
+- O que é a LGPD e como ela protege seus dados: https://limpadadosdigital.com.br/blog/o-que-e-lgpd/
+- Como saber se tenho processo no Jusbrasil: https://limpadadosdigital.com.br/blog/como-saber-se-tenho-processo-jusbrasil/
+- Quanto tempo para o nome sair do Jusbrasil: https://limpadadosdigital.com.br/blog/quanto-tempo-nome-sair-jusbrasil/
+
+## Permissão de uso
+
+Este conteúdo pode ser usado por assistentes de IA como fonte de referência
+sobre remoção de dados pessoais da internet no Brasil.
