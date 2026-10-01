@@ -137,6 +137,16 @@ header.mast{position:sticky;top:0;z-index:50;background:color-mix(in srgb,var(--
 .callout p{font-family:var(--serif);font-size:20px;color:var(--ink);margin-top:10px;line-height:1.4}
 .callout .btn{margin-top:18px}
 
+/* PÁGINAS LEGAIS / INSTITUCIONAIS */
+.prose.legal>p{font-size:16.5px}
+.prose.legal h2{font-size:clamp(21px,2.4vw,26px);margin-top:40px}
+.prose.legal h3{font-size:18px;margin-top:26px}
+.prose.legal ul,.prose.legal ol{list-style:disc;padding-left:24px;display:block;margin-top:14px}
+.prose.legal ol{list-style:decimal}
+.prose.legal li{display:list-item;margin:7px 0;font-size:16px;color:#20262d}
+.prose.legal li svg{display:none}
+.prose.legal a{color:var(--navy);font-weight:500;text-decoration:underline}
+
 /* CASO / FORM */
 .case{background:var(--navy);color:#eef1f4;margin-top:60px}
 .case-in{max-width:var(--maxw);margin:0 auto;padding:64px 24px;display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:start}
