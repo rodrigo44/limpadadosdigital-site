@@ -29,12 +29,10 @@
     if(nome.length < 2){ err.textContent = 'Escreva seu nome, por favor.'; return; }
     if(tel.replace(/\D/g,'').length < 10){ err.textContent = 'Informe um WhatsApp válido com DDD.'; return; }
 
-    /* // Ativar quando /api/lead existir:
     try{
-      fetch('/api/lead', {method:'POST', headers:{'Content-Type':'application/json'},
+      fetch('/api/lead', {method:'POST', headers:{'Content-Type':'application/json'}, keepalive:true,
         body: JSON.stringify({nome:nome, tel:tel, problema:prob, pagina: location.pathname})});
     }catch(_){}
-    */
     finish(nome, tel, prob);
   });
 })();
