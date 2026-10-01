@@ -1,4 +1,13 @@
 {
   "cleanUrls": true,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "redirects": [
+    { "source": "/blog/como-saber-se-tenho-processo-jusbrasil", "destination": "/blog/tirar-nome-do-jusbrasil", "permanent": true },
+    { "source": "/blog/quanto-tempo-nome-sair-jusbrasil", "destination": "/blog/tirar-nome-do-jusbrasil", "permanent": true },
+    { "source": "/blog/mito-5-anos-nome-limpo-jusbrasil", "destination": "/blog/tirar-nome-do-jusbrasil", "permanent": true },
+    { "source": "/blog/escavador-cobra-para-remover", "destination": "/blog/como-remover-processos-escavador", "permanent": true },
+    { "source": "/blog/escavador-documento-govbr", "destination": "/blog/como-remover-processos-escavador", "permanent": true },
+    { "source": "/blog/o-que-e-lgpd", "destination": "/", "permanent": true },
+    { "source": "/blog/tirar-foto-casa-google-street-view", "destination": "/", "permanent": true }
+  ]
 }
