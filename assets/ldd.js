@@ -13,6 +13,7 @@
 
   function finish(nome, tel, prob){
     var ctx = form.getAttribute('data-context') || 'Site';
+    try{ if(typeof gtag==='function'){ gtag('event','generate_lead',{ form_context: ctx, page_path: location.pathname, problema: prob }); } }catch(_){}
     var msg = 'Olá, sou ' + nome + '. Quero remover ' + prob + '. Meu WhatsApp: ' + tel + '. (' + ctx + ')';
     waGo.setAttribute('href', WA + encodeURIComponent(msg));
     formView.hidden = true;
